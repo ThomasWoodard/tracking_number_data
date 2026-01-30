@@ -1,0 +1,28 @@
+{
+  "name": "Asendia",
+  "courier_code": "asendia",
+  "tracking_numbers": [
+    {
+      "name": "e-PAQ Select DDP",
+      "id": "epaq_select_ddp",
+      "regex": "\\s*(AS)(?<SerialNumber>([0-9]\\s*){9})(US)",
+      "validation": {},
+      "tracking_url": "https://a1.asendiausa.com/tracking/?trackingnumber=%s",
+      "test_numbers": {
+        "valid": [
+          "AS009306250US",
+          "AS009305157US",
+          "AS009307026US",
+          "AS009307168US",
+          "AS009307246US",
+          "AS009308322US"
+        ],
+        "invalid": [
+          "JJD0099999999",
+          "AS00000000US",
+          "AS0000000000US"
+        ]
+      }
+    }
+  ]
+}
