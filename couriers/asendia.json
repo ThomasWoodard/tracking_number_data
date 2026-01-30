@@ -5,7 +5,7 @@
     {
       "name": "e-PAQ Select DDP",
       "id": "epaq_select_ddp",
-      "regex": "\\s*(AS)(?<SerialNumber>([0-9]\\s*){9})(US)",
+      "regex": "\\s*(?:AS)(?<SerialNumber>([0-9]\\s*){9})(?:US)",
       "validation": {},
       "tracking_url": "https://a1.asendiausa.com/tracking/?trackingnumber=%s",
       "test_numbers": {
